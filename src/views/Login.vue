@@ -31,15 +31,15 @@ const rules = {
 const formRef = ref(null)
 const userInfo = async () => {
   let res = await getUserInfo()
-  if (res.data.status === 1) {
-    window.localStorage.setItem('loginState', 'true')
+  if (res.status === 1) {
+    // localStorage.setItem('loginState', 'true')
     router.push('/home')
     message('检测到您已经登录,自动跳转到首页', 'success')
-  } else {
-    message('登录已过期请重新登录', 'warning')
-    window.localStorage.setItem('loginState', 'false')
   }
-
+  // else if (res.status === 0) {
+  //   message('登录已过期请重新登录', 'warning')
+  //   localStorage.setItem('loginState', 'false')
+  // }
 }
 userInfo()
 const submit = () => {
@@ -66,6 +66,7 @@ const submit = () => {
 <style lang="scss" scoped>
 .container {
   width: 100%;
+  height:100vh;
   background-color: #324057;
   border: 1px solid transparent;
 }

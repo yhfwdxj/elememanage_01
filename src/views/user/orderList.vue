@@ -41,7 +41,7 @@ const getOrder = async () => {
     limit: pageSize.value
   })
   tableData.value = res
-  console.log(res)
+
 }
 getOrder()
 const orderCount = async () => {
@@ -57,7 +57,7 @@ const changeValue = async e => {
     limit: paginationValue.pageSize
   })
   tableData.value = res
-  console.log(tableData)
+
 }
 </script>
 

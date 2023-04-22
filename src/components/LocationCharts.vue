@@ -13,7 +13,6 @@ const props = defineProps({
 const { userCity } = props
 const initEcharts = async () => {
   await nextTick()
-  console.log(userCity);
   let pieData = echarts.init(document.querySelector('.loactionCharts'))
   pieData.setOption({
     title: {

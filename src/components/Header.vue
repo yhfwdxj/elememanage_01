@@ -35,7 +35,6 @@ watch(router.currentRoute, newValue => {
 })
 const userInfo = async () => {
   let res = await getUserInfo()
-  console.log(res);
   if (res.data.status === 1) {
     imgUrl.value = baseImgPath + res.data.avatar
     store.commit('getUserInfo', res.data)

@@ -77,7 +77,7 @@ const getFood = async () => {
     limit: 20
   })
   tableData.value = res
-  console.log(tableData)
+
 }
 getFood()
 const resCount = async () => {
@@ -93,7 +93,7 @@ const changeValue = async e => {
     limit: paginationValue.pageSize
   })
   tableData.value = res
-  console.log(tableData)
+
 }
 const handleEdit = (i, row) => {
   curRow.value = row

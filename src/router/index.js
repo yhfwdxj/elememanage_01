@@ -89,7 +89,6 @@ const router = createRouter({
 router.beforeEach((to, from, next) => { 
   if (to.path!=='/login' &&localStorage.getItem('loginState')==='false'){
     next({name:'login'})
-    console.log('2',to);
   }
    else next()
 })
