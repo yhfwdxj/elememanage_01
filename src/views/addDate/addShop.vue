@@ -100,7 +100,7 @@ const rules = reactive({
   address: [{ required: true, message: '请输入详细地址', trigger: 'blur' }],
   phone: [
     { required: true, message: '请输入联系电话' },
-    { type: 'number', message: '只能是数字' }
+    { type: 'number', message: '只能是数字' }z
   ],
   img: [{ validator: imgRules, trigger: 'change', required: true }]
 })
