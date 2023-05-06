@@ -16,4 +16,4 @@ yarn dev
 ![更改商家信息](https://github.com/yhfwdxj/elememanage_01/blob/main/elmanage/changeInfo.gif)
 ![添加食品](https://github.com/yhfwdxj/elememanage_01/blob/main/elmanage/addFood.gif)
 ### 其它
-![用户分布](https://github.com/yhfwdxj/elememanage_01/blob/main/elmanage/locaion.gif)
+![用户分布](https://github.com/yhfwdxj/elememanage_01/blob/main/elmanage/location.gif)
