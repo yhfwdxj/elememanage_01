@@ -1,7 +1,11 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# 关于本项目
+## 简介
+本项目是[仿饿了么小程序](https://github.com/yhfwdxj/eleme_01_uniapp)的后台管理系统，接口数据来源于[node-elm](https://github.com/bailicangdu/node-elm/blob/master/API.md) 
+### 技术栈
+vue3 + vue-router + vuex + axios + sass+ elementUI-plus
+## 项目启动
+```
+yarn add 
+yarn dev
+```
+## 项目截图

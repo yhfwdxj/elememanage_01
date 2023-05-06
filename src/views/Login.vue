@@ -25,26 +25,22 @@ const form = reactive({
   password: ''
 })
 const rules = {
-  username: [{ required: true, message: '请输入用户名', trigger: 'blur' },{pattern:/^1[3|5|8|9][1-9][0-9]{8}$/,message:'手机号码格式错误',trigger:'blur'}],
+  username: [{ required: true, message: '请输入用户名', trigger: 'blur' }, { pattern: /^1[3|5|8|9][1-9][0-9]{8}$/, message: '手机号码格式错误', trigger: 'blur' }],
   password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
 }
 const formRef = ref(null)
 const userInfo = async () => {
   let res = await getUserInfo()
   if (res.status === 1) {
-    // localStorage.setItem('loginState', 'true')
     router.push('/home')
     message('检测到您已经登录,自动跳转到首页', 'success')
   }
-  // else if (res.status === 0) {
-  //   message('登录已过期请重新登录', 'warning')
-  //   localStorage.setItem('loginState', 'false')
-  // }
 }
 userInfo()
 const submit = () => {
   formRef.value.validate(async valid => {
     if (!valid) {
+      message('手机号码格式错误', 'error')
       return
     }
     const { username, password } = form
@@ -66,7 +62,6 @@ const submit = () => {
 <style lang="scss" scoped>
 .container {
   width: 100%;
-  height:100vh;
   background-color: #324057;
   border: 1px solid transparent;
 }
